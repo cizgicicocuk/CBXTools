@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuring the Settings</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container-fluid">
+            <a id="navbar-title" class="navbar-brand" href="index-en.html">Help Center</a>
+        </div>
+    </nav>
+
+    <h1 id="main-title" class="text-center text-primary mb-4">Configuring the Settings</h1>
+
+    <div class="box">
+        <div class="card-body">
+
+            <h5><strong>Settings Window</strong></h5>
+            <img src="images/cbx_settings-en.jpg" class="gui-img" alt="CBX Yools GUI">
+            <p id="card3-text" class="card-text">CBX Tools is a utility program designed to assist in converting and
+                optimizing common comic book file formats, including CBR, CBZ, and PDF. CBX Tools aims to preserve
+                image resolution and DPI settings as much as possible, ensuring virtually lossless conversion and
+                optimization for high-quality results.</p>
+            <div class="content">
+                <ul>
+                    <li><strong>Language:</strong> Select the interface language (English or Turkish). The language
+                        setting is applied immediately after saving the dialog.</li><br>
+                    <li><strong>JPEG Quality:</strong> Set the quality of JPEG images (10–100). This setting is used
+                        during PDF-to-CBR conversion for JPEG images or formats like PBM, PGM, and PPM that require
+                        conversion to JPEGs. Values above 80 significantly increase file size without visible quality
+                        improvement. For optimal quality and smaller file sizes, a value between 70 and 80 is
+                        recommended. Default is 80.</li><br>
+                    <li><strong>JPEG DPI:</strong> Specify the resolution for JPEG images in DPI (150, 300, 400, 600).
+                        This is applied during PDF-to-CBR conversion for JPEG images or formats like PBM, PGM, and PPM
+                        that require conversion to JPEGs. Values of 400 and above significantly increase file size. For
+                        a balance of quality and file size, 300 DPI is recommended. The default value is 300.</li><br>
+                    <li><strong>JPEG Optimization:</strong> Select the tool for optimizing (reducing file sizes without
+                        compromising resolution or DPI) JPEG images.<br>
+                        <strong>Disabled:</strong> Leaves JPEG files unchanged.<br> <strong>jpegoptim.exe:</strong> A
+                        free
+                        tool included in CBX Tools,
+                        providing lossless optimization via Huffman table adjustments.<br> <strong>JPEGmini
+                            Pro:</strong> A
+                        paid tool that
+                        reduces file size without sacrificing quality, offering better and faster results than
+                        jpegoptim. This tool must be installed and set up as per the <a
+                            href="getting-started-tr.html">Getting Started</a> section.<br>
+                        <strong>Manual:</strong>
+                        Pauses the process, prompting the user to optimize files manually. Click 'OK' to continue after
+                        completion.
+                    </li><br>
+                    <li><strong>Solid Archive:</strong> Enable or disable solid archiving in RAR compression. Default
+                        is No (Disable).<br>
+
+                        A solid archive is a type of compression where multiple files are treated as a single continuous
+                        block during the compression process. This method can provide better compression ratios,
+                        especially for collections of similar files, as it allows for more efficient storage of shared
+                        data between files.<br>
+
+                        Using a solid archive may help reduce the file size of large comic book files, resulting in
+                        smaller overall sizes. However, the effect might be negligible for comic files under 150 pages.
+                        Additionally, enabling solid archiving can reduce file recoverability compared to regular
+                        compression with the same percentage of recovery record. In case of file corruption, recovery
+                        might be more challenging with solid archives..</li><br>
+                    <li><strong>Recovery Record (%):</strong> Specify the percentage of recovery data for RAR archives.
+                        (3%-10%).<br>
+                        A recovery record is a data set added to an archive to help recover the archive in case of
+                        corruption. When a RAR archive is created with a recovery record, a portion of the archive is
+                        dedicated to storing error correction information. This allows the user to repair the archive if
+                        part of it becomes damaged or unreadable.
+
+                        The percentage (3%-10%) determines how much of the archive's total size is allocated for
+                        recovery purposes. A higher percentage increases the chances of successfully recovering data
+                        from a corrupted archive but also increases the file size.<br> The default value is 5%, offering
+                        a
+                        balance between compression and recoverability.</li><br>
+                    <li><strong>Output Folder Path:</strong> Specify the path where the OUTPUT folder, where the final
+                        files will be saved, is created. <br>
+
+                        The output folder is where the processed or modified files will be stored once the operation
+                        (like compression or optimization) is completed. CBX Tools ensures that the original source
+                        files remain unchanged and intact in their original location. Only the new or modified versions
+                        of the files are placed in the specified output folder. This keeps the source files safe while
+                        allowing you to work with the new results separately.<br><br>
+                        For example, if the Output Folder Path is set to C:\users\abc\Desktop, the processed files will
+                        be placed under C:\users\abc\Desktop\OUTPUT. If the OUTPUT folder does not exist, it will be
+                        created automatically. If the OUTPUT folder already exists and contains files, the existing
+                        folder will be renamed, and a new C:\users\abc\Desktop\OUTPUT folder will be created to store
+                        the processed files. This ensures that the final files are always placed in a fresh, dedicated
+                        folder without overwriting existing files.
+                    </li><br>
+                    <li><strong>WinRAR Path:</strong> Specify the path of the WinRAR executable. Default is C:\Program
+                        Files\WinRAR\</li><br>
+                    <li><strong>JPEGmini Path:</strong> Specify the path of the JPEGmini application. This is required
+                        if JPEGmini is selected in the JPEG Optimization box.</li><br>
+                    <li><strong>Verbose Info Mode:</strong> Enable or disable detailed output (Yes/No).</li>
+                </ul>
+
+                <div class="button-help">
+                    <h2>Buttons:</h2>
+                    <ul>
+                        <li><strong>Save:</strong> Save the current settings.</li>
+                        <li><strong>Defaults:</strong> Reset settings to their default values.</li>
+                        <li><strong>Cancel:</strong> Exit without saving changes.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/footer.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version History</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container-fluid">
+            <a id="navbar-title" class="navbar-brand" href="index-en.html">Help Center</a>
+        </div>
+    </nav>
+
+    <h1 id="main-title" class="text-center text-primary mb-4">Version History</h1>
+
+    <div class="version">
+        <h2>v1.2.7 [February 9, 2025]</h2>
+        <p class="date">Bug Fixes</p>
+        <ul class="changes">
+            <li><span class="fix">Bug Fix:</span> If the dropped folders contained special characters like [], the
+                files inside these folders could not be processed. This issue has been fixed.</li>
+        </ul>
+    </div>
+
+    <div class="version">
+        <h2>v1.2.6 [January 24, 2024]</h2>
+        <p class="date">New Features and Bug Fixes</p>
+        <ul class="changes">
+            <li><span class="feature">New Feature:</span> Added a Help Menu under the Tools menu. Information about
+                program usage and version history can be accessed from this menu.</li>
+            <li><span class="fix">Bug Fix:</span> Prevented running multiple instances of the program simultaneously.
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="version">
+        <h2>v1.2.5 [January 15, 2025]</h2>
+        <p class="date">Bug Fixes and Improvements</p>
+        <ul class="changes">
+            <li><span class="fix">Bug Fix:</span> The WinRAR extraction command was modified to handle CBR/CBZ files
+                containing multiple folders with similarly named files, ensuring smooth optimization and PDF
+                conversions.</li>
+            <li><span class="fix">Bug Fix:</span> The correctness of images generated during PDF-to-CBR conversion is
+                now verified.</li>
+            <li><span class="fix">Bug Fix:</span> Third-party helper programs running in the background are now properly
+                terminated if the program is closed during processing.</li>
+            <li><span class="improvement">Improvement:</span> Python libraries have been updated.</li>
+            <li><span class="improvement">Improvement:</span> A "Processed by CBX Tools" note has been added to WinRAR
+                archives to easily identify optimized archives.</li>
+            <li><span class="improvement">Improvement:</span> The parallel file processing feature, removed in version
+                1.2.1, has been reintroduced.</li>
+        </ul>
+    </div>
+
+    <div class="version">
+        <h2>v1.2.1 [December 10, 2024]</h2>
+        <p class="date">Bug Fixes</p>
+        <ul class="changes">
+            <li><span class="fix">Bug Fix:</span> During PDF-to-CBR conversion, sequential processing is now used
+                instead of parallel processing for PDFs containing a single image per page to prevent rare errors during
+                JPEG export.</li>
+            <li><span class="fix">Bug Fix:</span> The solid archive status was corrected for Turkish. When the program
+                is used in Turkish, this value was displayed as Yes/No.</li>
+        </ul>
+    </div>
+
+    <div class="version">
+        <h2>v1.2 [October 31, 2024]</h2>
+        <p class="date">Bug Fixes</p>
+        <ul class="changes">
+            <li><span class="fix">Bug Fix:</span> The program has been modified to work on high-resolution displays
+                (e.g., 4K screens) with Windows scaling settings over 100%.</li>
+            <li><span class="fix">Bug Fix:</span> Existing XML files in the source CBR/CBZ files are now included in the
+                final CBR output during optimization process.</li>
+        </ul>
+    </div>
+
+    <div class="version">
+        <h2>v1.1.6 [October 29, 2024]</h2>
+        <p class="date">Bug Fixes</p>
+        <ul class="changes">
+            <li><span class="fix">Bug Fix:</span> If the processed file name started with a hyphen (-), WinRAR mistook
+                it for a parameter and returned an error.</li>
+            <li><span class="fix">Bug Fix:</span> If the user activated the solid archive option in the default WinRAR
+                configuration file, WinRAR used this setting regardless of the program's configuration.</li>
+            <li><span class="fix">Bug Fix:</span> Files created on macOS, containing hidden __MACOSX folders for
+                metadata, caused errors during processing.</li>
+            <li><span class="fix">Bug Fix:</span> When using jpegMini Pro for optimization, the information box
+                displayed the "EXTRACT" message from the previous step.</li>
+        </ul>
+    </div>
+
+    <div class="version">
+        <h2>v1.1.3 [June 3, 2024]</h2>
+        <p class="date">Improvements</p>
+        <ul class="changes">
+            <li><span class="improvement">Improvement:</span> All third-party programs except jpegoptim.exe have been
+                replaced with Python libraries.</li>
+            <li><span class="improvement">Improvement:</span> Conversion of PDFs with text or multiple images per page
+                to CBR is now 50% faster.</li>
+            <li><span class="improvement">Improvement:</span> The license agreement in the setup program was updated to
+                reflect the MIT license.</li>
+        </ul>
+    </div>
+
+    <div class="version">
+        <h2>v1.1.1 [June 1, 2024]</h2>
+        <p class="date">New Features, Bug Fixes, and Improvements</p>
+        <ul class="changes">
+            <li><span class="feature">New Feature:</span> Total processing time for each operation is now displayed in
+                hours, minutes, and seconds after completion.</li>
+            <li><span class="fix">Bug Fix:</span> Manual and Disabled options in JPEG Optimization were unavailable in
+                Turkish mode.</li>
+            <li><span class="fix">Bug Fix:</span> Reprocessing files from OUTPUT folder is now prevented to avoid
+                errors.</li>
+            <li><span class="improvement">Improvement:</span> pdfinfo.exe has been replaced with an equally fast Python
+                library.</li>
+            <li><span class="improvement">Improvement:</span> The About Program text has been simplified.</li>
+            <li><span class="improvement">Improvement:</span> The program is now licensed under the MIT license.</li>
+            <li><span class="improvement">Improvement:</span> The progress bar in the lower-right corner has been
+                shortened and swapped with the adjacent Info Label.</li>
+            <li><span class="improvement">Improvement:</span> Non-critical and repetitive messages are now displayed on
+                the Info Label instead of the main output screen.</li>
+        </ul>
+    </div>
+
+    <div class="version">
+        <h2>v1.0.8 [May 1, 2024]</h2>
+        <p class="date">Bug Fixes and Improvements</p>
+        <ul class="changes">
+            <li><span class="fix">Bug Fix:</span> Code added in version 1.0.7 caused errors during optimization with
+                JPEGMini and has been corrected.</li>
+            <li><span class="improvement">Improvement:</span> pdftotext has been replaced with a faster Python library.
+            </li>
+        </ul>
+    </div>
+
+    <div class="version">
+        <h2>v1.0.7 [May 1, 2024]</h2>
+        <p class="date">New Features and Improvements</p>
+        <ul class="changes">
+            <li><span class="feature">New Feature:</span> Total processing time for each operation is displayed in
+                seconds after completion.</li>
+            <li><span class="improvement">Improvement:</span> ImageMagick and QPDF third-party tools have been replaced
+                with Python libraries.</li>
+            <li><span class="improvement">Improvement:</span> CBR/CBZ to PDF conversion is now 65% faster compared to
+                the previous version.</li>
+        </ul>
+    </div>
+
+    <div class="version">
+        <h2>v1.0.6 [April 8, 2024]</h2>
+        <p class="date">Improvements</p>
+        <ul class="changes">
+            <li><span class="improvement">Improvement:</span> The two-step alternative method for PDF-to-CBR conversion
+                has been removed, allowing all conversions to be done in a single step.</li>
+            <li><span class="improvement">Improvement:</span> A Turkish license text has been added to the setup file.
+            </li>
+            <li><span class="improvement">Improvement:</span> The settings.ini file is now preserved during program
+                updates.</li>
+            <li><span class="improvement">Improvement:</span> Program version information is now embedded in the exe
+                file for viewing in Windows Explorer.</li>
+            <li><span class="improvement">Improvement:</span> Version information has been added to the About menu.</li>
+        </ul>
+    </div>
+
+    <div class="version">
+        <h2>v1.0.5 [April 7, 2024]</h2>
+        <p class="date">Bug Fixes</p>
+        <ul class="changes">
+            <li><span class="fix">Bug Fix:</span> Typographical errors in some Turkish messages have been corrected.
+            </li>
+        </ul>
+    </div>
+
+    <div class="version">
+        <h2>v1.0.4 [April 6, 2024]</h2>
+        <p class="date">Improvements</p>
+        <ul class="changes">
+            <li><span class="improvement">Improvement:</span> The alternative method for PDF-to-CBR conversion has been
+                accelerated by 50%.</li>
+        </ul>
+    </div>
+
+    <div class="version">
+        <h2>v1.0.3 [April 6, 2024]</h2>
+        <p class="date">Bug Fixes and Improvements</p>
+        <ul class="changes">
+            <li><span class="fix">Bug Fix:</span> File names are now displayed correctly in warning messages.</li>
+            <li><span class="improvement">Improvement:</span> The installer now automatically removes the previous
+                version before installing the new one.</li>
+        </ul>
+    </div>
+
+    <div class="version">
+        <h2>v1.0.1 [April 4, 2024]</h2>
+        <p class="date">Initial Release</p>
+    </div>
+
+    <script src="js/footer.js"></script>
+
+</body>
+
+</html>

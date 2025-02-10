@@ -1,0 +1,105 @@
+/* Custom class for resizing images */
+.language-selector {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.help-img {
+  width: 50px;
+  /* Adjust to a percentage or fixed size, like 300px */
+  height: auto;
+  /* Maintain aspect ratio */
+  object-fit: cover;
+  /* Adjust this for cropping styles if needed */
+  border-radius: 8px;
+  /* Optional: Rounded corners for a nicer look */
+  margin: 0 auto;
+}
+
+
+.gui-img {
+  width: 100%;
+  /* Stay inside the parent container */
+  max-width: 800px;
+  /* Prevent width from exceeding 800px */
+  height: auto;
+  /* Maintain aspect ratio */
+  object-fit: cover;
+  /* Adjust this for cropping styles if needed */
+  border-radius: 4px;
+  /* Optional: Rounded corners for a nicer look */
+  margin-top: 10px;
+  /* margin-bottom: 2cqmin; */
+  margin-bottom: 30px;
+}
+
+.feature {
+  font-weight: bold;
+  color: #007BFF;
+  /* Blue for features */
+}
+
+.fix {
+  font-weight: bold;
+  color: #FF6347;
+  /* Red for fixes */
+}
+
+.improvement {
+  font-weight: bold;
+  color: #28A745;
+  /* Green for improvements */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.version {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.version h2 {
+  margin-top: 0;
+  color: #0066cc;
+}
+
+.date {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.changes {
+  margin-top: 10px;
+}
+
+.changes li {
+  margin-bottom: 8px;
+}
+
+.spacing {
+  margin-top: 50px;
+  /* Adjust as needed */
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}

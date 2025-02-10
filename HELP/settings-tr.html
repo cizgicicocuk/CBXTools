@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapılandırma Ayarları</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container-fluid">
+            <a id="navbar-title" class="navbar-brand" href="index-tr.html">Yardım Merkezi</a>
+        </div>
+    </nav>
+
+    <h1 id="main-title" class="text-center text-primary mb-4">Yapılandırma Ayarları</h1>
+
+    <div class="box">
+        <div class="card-body">
+
+            <h5><strong>Ayarlar Penceresi</strong></h5>
+            <img src="images/cbx_settings-tr.jpg" class="gui-img" alt="CBX Araçları GUI">
+            <p id="card3-text" class="card-text">CBX Tools, CBR, CBZ ve PDF gibi yaygın çizgi roman dosya formatlarını
+                dönüştürmeye ve optimize etmeye yardımcı olmak için tasarlanmış bir yardımcı programdır. CBX Araçları,
+                resim
+                çözünürlüğünü ve DPI ayarlarını mümkün olduğunca koruyarak yüksek kaliteli sonuçlar için neredeyse
+                kayıpsız
+                dönüşüm ve optimizasyon sağlamayı amaçlar.</p>
+            <div class="content">
+                <ul>
+                    <li><strong>Dil:</strong> Arayüz dilini seçin (İngilizce veya Türkçe). Dil ayarı, değiklik
+                        kaydedilir kaydedilmez
+                        hemen sonra uygulanır.</li><br>
+                    <li><strong>JPEG Kalitesi:</strong> JPEG formatındaki dosyaların kalitesini ayarlar (10–100). Bu
+                        ayar, PDF'den CBR'ye
+                        dönüşüm sırasında JPEG görüntüleri veya JPEG'e dönüştürülmesi gereken PBM, PGM ve PPM gibi
+                        formatlar
+                        için kullanılır. 80'in üzerindeki değerler dosya boyutunu belirgin şekilde artırırken kaliteyi
+                        gözle görülür bir şekilde artırmaz.
+                        Optimum kalite ve daha küçük dosya boyutları için 70 ile 80 arasında bir değer önerilir.
+                        Varsayılan değer
+                        80'dir.</li><br>
+                    <li><strong>JPEG DPI:</strong> JPEG görüntüleri için çözünürlüğü DPI cinsinden belirler (150, 300,
+                        400, 600).
+                        Bu ayar, PDF'den CBR'ye dönüşüm sırasında JPEG görüntüleri veya JPEG'e dönüştürülmesi gereken
+                        PBM, PGM
+                        ve PPM gibi formatlar için uygulanır. 400 ve üzerindeki değerler dosya boyutunu belirgin şekilde
+                        artırır. Kalite
+                        ve dosya boyutunun dengesi için 300 DPI önerilir. Varsayılan değer 300'dür.</li><br>
+                    <li><strong>JPEG Optimizasyonu:</strong> JPEG görüntülerini optimize etmek için kullanılacak aracı
+                        belirler (çözünürlük veya DPI
+                        değerlerine dokunmadan dosya boyutlarını azaltmaya yarar).<br>
+                        <strong>Devre Dışı:</strong> JPEG dosyaları üzerinde işlem uygulanmaz.<br>
+                        <strong>jpegoptim.exe:</strong> CBX Tools ile gelen ücretsiz bir araçtır, Huffman tablosu
+                        ayarlamaları
+                        ile kayıpsız optimizasyon sağlar.<br>
+                        <strong>JPEGmini Pro:</strong> Ücretli bir araçtır, kaliteyi bozmadan dosya boyutunu küçültür ve
+                        jpegoptim'den
+                        daha hızlı ve daha iyi sonuçlar sunar. Bu aracın kurulum ve yapılandırması <a
+                            href="getting-started-tr.html">Kullanım Klavuzu</a>
+                        bölümünde anlatıldığı gibi yapılmalıdır.<br>
+                        <strong>Manuel:</strong> Süreci durdurur, kullanıcıdan dosyaları manuel olarak optimize etmesini
+                        ister. Tamamlandıktan
+                        sonra devam etmek için 'Tamam'a tıklayın.
+                    </li><br>
+                    <li><strong>Solid Archive:</strong> RAR sıkıştırmasında katı arşivlemeyi etkinleştirir veya devre
+                        dışı bırakır. Varsayılan
+                        değer Hayır (Devre Dışı).<br>
+
+                        Katı arşiv, birden fazla dosyanın sıkıştırma sürecinde tek bir dosyaymış gibi ele alındığı bir
+                        sıkıştırma
+                        türüdür. Bu yöntem, benzer dosyaların koleksiyonlarında daha iyi sıkıştırma oranları
+                        sağlayabilir, çünkü dosyalar
+                        arasındaki paylaşılan verilerin daha verimli bir şekilde depolanmasına olanak tanır.<br>
+
+                        Katı arşiv kullanmak, büyük çizgi roman dosyalarının dosya boyutunu azaltmaya yardımcı olabilir,
+                        bu da daha küçük
+                        dosya boyutları sağlar. Ancak, 150 sayfadan küçük çizgi roman dosyalarında etkisi ihmal
+                        edilebilir. Ayrıca, katı
+                        arşivlemeyi etkinleştirmek, aynı kurtarma kaydı yüzdesine sahip normal sıkıştırma ile
+                        karşılaştırıldığında dosya
+                        kurtarılabilirliğini azaltabilir. Dosya bozulması durumunda, katı arşivlerle kurtarma işlemi
+                        daha zor olabilir.</li><br>
+                    <li><strong>Kurtarma Kaydı (%):</strong> RAR arşivleri için kurtarma verilerinin yüzdesini belirler.
+                        (3%-10%).<br>
+                        Kurtarma kaydı, bir arşivin bozulması durumunda arşivi kurtarmaya yardımcı olmak için eklenen
+                        bir veri setidir.
+                        Bir RAR arşivi kurtarma kaydıyla oluşturulduğunda, arşivin bir kısmı hata düzeltme bilgilerini
+                        saklamak için
+                        ayrılır. Eğer bir kısmı bozulmuş veya okunamaz hale gelirse, bu kayıt kullanıcının arşivi
+                        onarmasına olanak tanır.
+
+                        Daha yüksek bir yüzde, bozulmuş bir arşivden veri kurtarma şansını artırırken, dosya boyutunu da
+                        artırır.<br> Varsayılan değer
+                        %5'tir ve bu, sıkıştırma ve kurtarılabilirlik arasında bir denge sağlar.</li><br>
+                    <li><strong>Çıktı Klasörü Yolu:</strong> Çıktı dosyalarının kaydedileceği OUTPUT klasörünün yolunu
+                        belirler. <br>
+
+                        Çıktı klasörü, işlem (sıkıştırma veya optimizasyon gibi) tamamlandıktan sonra işlenmiş veya
+                        değiştirilmiş dosyaların
+                        saklanacağı yerdir. CBX Tools, orijinal kaynak dosyaların değişmeden ve olduğu gibi kalmasını
+                        sağlar. Yalnızca yeni
+                        dosyalar belirtilen çıktı klasörüne yerleştirilir. Bu, kaynak dosyaların güvende kalmasını
+                        sağlar
+                        .<br><br>
+                        Örneğin, Çıktı Klasörü Yolu C:\users\abc\Desktop olarak ayarlandığında, işlenmiş dosyalar
+                        C:\users\abc\Desktop\OUTPUT
+                        altında yer alacaktır. Eğer OUTPUT klasörü mevcut değilse, otomatik olarak oluşturulacaktır.
+                        Eğer OUTPUT klasörü zaten
+                        mevcutsa ve dosyalar içeriyorsa, mevcut klasör yeniden adlandırılacak ve yeni bir
+                        C:\users\abc\Desktop\OUTPUT klasörü
+                        oluşturulacaktır. Bu, final dosyalarının her zaman yeni bir, özel klasöre yerleştirilmesini ve
+                        mevcut dosyaların üzerine
+                        yazılmamasını sağlar.
+                    </li><br>
+                    <li><strong>WinRAR Yolu:</strong> WinRAR program dosyasının yolunu belirtin. Varsayılan değer
+                        C:\Program
+                        Files\WinRAR\</li><br>
+                    <li><strong>JPEGmini Yolu:</strong> JPEGmini uygulamasının yolunu belirtin. Bu değer JPEG
+                        Optimizasyonu kutusunda
+                        JPEGMını Pro seçilmişse gereklidir.</li><br>
+                    <li><strong>Ayrıntılı Bilgi Modu:</strong> Ayrıntılı çıktıyı etkinleştirin veya devre dışı bırakın
+                        (Evet/Hayır).</li>
+                </ul>
+
+                <div class="button-help">
+                    <h2>Düğmeler:</h2>
+                    <ul>
+                        <li><strong>Kaydet:</strong> Mevcut ayarları kaydedin.</li>
+                        <li><strong>Varsayılanlar:</strong> Ayarları varsayılan değerlere sıfırlayın.</li>
+                        <li><strong>İptal:</strong> Değişiklikleri kaydetmeden çıkın.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/footer.js"></script>
+
+</body>
+
+</html>
